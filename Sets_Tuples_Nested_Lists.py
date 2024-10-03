@@ -132,22 +132,29 @@ sample_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 print(len(sample_list)) # Output: 3
 #this is called a nested list
 # Extract and print the second element from the first list
-
+print(sample_list[0][1])
+print(sample_list[1][2])
+print(sample_list[2][0])
+print(sample_list[2][1])
+print(sample_list[2][2])
 
 sample_list_of_fruit = {"fruits": ["apple", "banana", "cherry"]}
 # Extract and print the second fruit from the list
-
+print(sample_list_of_fruit["fruits"][2])
 
 sample_list_of_lists = {"lists": [[1, 2, 3], [4, 5, 6], [7, 8, 9]]}
 # Extract and print the third element from the second list
+print(sample_list_of_lists["lists"][1][-1])
+print(sample_list_of_lists["lists"][-1][1])
+print(sample_list_of_lists["lists"][0][-1])
+print(sample_list_of_lists["lists"][-1][0])
 
-
-
-
-sample_list_of_dicts = {"dicts": [{"name": "Alice", "age": 25}, {"name": "Bob", "age": 30}, {"name": "Charlie", "age": 35}]}
+sample_list_of_dicts = {"dicts": [{"name": "Alice", "age": 25},
+                                   {"name": "Bob", "age": 30},
+                                     {"name": "Charlie", "age": 35}]}
 # Extract and print the age of the second person
-
-
+print(sample_list_of_dicts["dicts"][1]["age"])
+print(sample_list_of_dicts["dicts"][-1]["name"])
 
 
 
@@ -160,8 +167,9 @@ data = {
 
 # Extract and print the second item from the 'tropical' list
 print(data["fruits"]["tropical"][1])  # Output: 'pineapple'
-
-
+print(data["fruits"]["berries"][-1])
+print(data["prices"]["mango"])
+print(data["prices"]["banana"])
 
 
 # Define the dictionary
@@ -170,12 +178,11 @@ info = {
     "location": "New York"
 }
 
-
 # Extract and print the coach's name
 print(info["team"]["coach"]["name"])  # Output: 'John Doe'
-
-
-
+print(info["team"]["coach"]["age"])
+print(info["team"]["players"][-1])
+print(info["location"])
 
 # Define the dictionary
 company = {
@@ -194,7 +201,12 @@ company = {
 
 # Extract and print the second employee from the 'Engineering' department
 print(company["departments"]["Engineering"]["employees"][1])  # Output: 'Noah'
+print(company["departments"]["Engineering"]["budget"])
 
+budget1 = company["departments"]["HR"]["budget"]
+budget2 = company["departments"]["Engineering"]["budget"]
+total = budget1 + budget2
+print(total)
 
 # Define the dictionary
 school = {
