@@ -208,6 +208,8 @@ budget2 = company["departments"]["Engineering"]["budget"]
 total = budget1 + budget2
 print(total)
 
+
+#WEEK7_warmup
 # Define the dictionary
 school = {
     "class": {
@@ -219,7 +221,8 @@ school = {
 
 # Update the grade of student2
 school["class"]["students"]["student2"] = "A+"
-
+school["class"]["students"]["student3"] = "A+"
+school["class"]["students"]["student1"] = "A+"
 
 # Print the updated dictionary
 print(school)
@@ -229,20 +232,22 @@ print(school)
 product_inventory = {
     "warehouse1": {
         "products": ["apples", "oranges", "bananas"],
-        "quantities": [50, 30, 20]
+        "quantities1": [50, 30, 20]
     },
     "warehouse2": {
         "products": ["grapes", "pears", "peaches"],
-        "quantities": [60, 40, 30]
+        "quantities2": [60, 40, 30]
     }
 }
 
 
 # Find the total number of oranges in warehouse1
+product_inventory["warehouse1"]["quantities"][1]
+
 orange_quantity = product_inventory["warehouse1"]["quantities"][1]
 print(f"Total oranges in warehouse1: {orange_quantity}")  # Output: 30
 
-
+print(sum(quantity1) + sum(quantity2))
 
 
 # Define the dictionary
