@@ -247,7 +247,7 @@ product_inventory["warehouse1"]["quantities"][1]
 orange_quantity = product_inventory["warehouse1"]["quantities"][1]
 print(f"Total oranges in warehouse1: {orange_quantity}")  # Output: 30
 
-print(sum(quantity1) + sum(quantity2))
+
 
 
 # Define the dictionary
